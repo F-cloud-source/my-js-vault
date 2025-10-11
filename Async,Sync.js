@@ -8,11 +8,16 @@
 //                Handled with: Callbacks, Promises, Async/ Await.
 
 
+function func1(Callback){
+setTimeout(() => {console.log(`task no 1`)  
+                                      Callback()}  , 3000);
+}
+
+function func2(){
+    console.log(`task no 2`);
+    console.log(`task no 3 `); 
+    console.log(`taks no 4 `);
+}
 
 
-
-setTimeout(() => console.log(`task 1`) , 3000);
-
-console.log(`task no 2`);
-console.log(`task no 3 `);
-console.log(`taks no 4 `);
+func1(func2);
