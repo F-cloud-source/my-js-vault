@@ -14,7 +14,7 @@
 
  //console.dir(document);
 
-const userName = "ali";   // Try "ali" or leave empty
+const userName = "";   // Try "ali" or leave empty
 
 const travelMSG = document.getElementById("travel-msg");
 
