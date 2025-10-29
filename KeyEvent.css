@@ -1,0 +1,26 @@
+body {
+    background-color: hsl(220, 30%, 10%); /* dark navy */
+    margin: 15px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+#emoji {
+    background-color: hsl(174, 100%, 50%); /* bright teal */
+    width: 200px;
+    height: 200px;
+    font-size: 8rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: top 0.3s ease, left 0.3s ease, background-color 0.5s ease;
+}
+
+#emoji:hover {
+    background-color: hsl(340, 100%, 60%); /* hot pink */
+}
