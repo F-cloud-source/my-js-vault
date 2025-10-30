@@ -1,0 +1,31 @@
+body {
+    background-color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; /* center button and image */
+    padding: 50px;
+}
+
+#my-car {
+    font-size: 2rem;
+    color: azure;
+    background-color: blue;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#my-car:hover {
+    background-color: black;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: opacity 0.3s ease; /* smooth hide/show */
+}
