@@ -1,0 +1,28 @@
+body {
+    background-color: lightskyblue;
+}
+
+.myBtn {
+    background-color: darkblue;
+    border-radius: 5px;
+    color: lightblue;
+    margin: 15px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Smooth transition for all effects */
+}
+
+/* Hover effect: light up the button with a glow */
+.myBtn:hover {
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.8); /* Glow effect */
+    transform: scale(1.05); /* Slight enlargement to make it pop */
+}
