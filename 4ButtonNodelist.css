@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(255, 251, 0);
+}
+
+#project{
+    background-color: black;
+    border-radius: 20px;
+    
+}
+.Btn{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(60, 100%, 50%);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 30px 60px;
+    max-width: fit-content;
+    max-height: fit-content;
+      /* Define the transition */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+ body:hover{
+    background-color: hsl(190, 100%, 50%);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.hover{
+    background-color: hsl(120, 100%, 25%);
+    color: rgb(170, 255, 0);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.enabled{
+   background-color: hsl(0, 0%, 0%);
+      color: hsl(60, 100%, 50%);
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.disblad{
+   background-color: hsl(62, 100%, 50%);
+      color: hsl(0, 0%, 0%);
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+} 
