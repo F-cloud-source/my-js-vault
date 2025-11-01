@@ -1,0 +1,49 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+/* Base button style */
+button {
+    background-color: hsl(64, 100%, 50%);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease; /* smooth hover */
+    min-width: 200px;
+}
+
+
+
+.enabled{
+   box-shadow: 0 0 10px hsl(62, 99%, 50%); /* Add glow effect */
+    font-weight: bold; /* Make text bold */ 
+    color: rgba(106, 29, 29, 0.829);
+    background-color: hsl(0, 83%, 48%);
+}
+
+
+/* Hover effects when .hover class is added via JS */
+.hover1{
+    box-shadow: 0 0 10px hsl(0, 99%, 50%); /* Add glow effect */
+    font-weight: bold; /* Make text bold */
+}
+
+.hover2{
+    box-shadow: 0 0 10px hsla(175, 100%, 50%, 0.881); /* Add glow effect */
+    font-weight: bold; /* Make text bold */
+    color: hsl(0, 0%, 0%);
+}
+
+
+
+.replaced{
+    background-color: rgba(39, 39, 207, 0.655);
+    color: white;
+    box-shadow: 0 0 10px hsl(186, 100%, 51%); /* Add glow effect */
+}
