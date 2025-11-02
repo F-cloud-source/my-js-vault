@@ -1,0 +1,72 @@
+/* ===== Body / Layout ===== */
+body {
+    background-color: #111; /* dark background */
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ===== Heading ===== */
+h1 {
+    font-size: 3rem;
+    color: #ffcc00; /* gold/yellow */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ===== Buttons Container ===== */
+#choices {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* ===== Buttons ===== */
+#choices button {
+    font-size: 5rem;  /* large emoji buttons */
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffcc00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#choices button:hover {
+    background-color: #e6b800;
+    transform: scale(1.1); /* fun hover effect */
+}
+
+/* ===== Player, Computer, Result Displays ===== */
+#playerDisplay,
+#computerDisplay,
+#resultDisplay {
+    font-size: 2rem;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: #222;
+}
+
+/* ===== Mobile / Responsive ===== */
+@media (max-width: 500px) {
+    #choices button {
+        font-size: 4rem;
+        padding: 15px;
+    }
+
+    #playerDisplay,
+    #computerDisplay,
+    #resultDisplay {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}
