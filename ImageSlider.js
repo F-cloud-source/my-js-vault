@@ -29,7 +29,7 @@ function IntializeSlider(){
     }
 
 }
-
+// Building feature for ShowSlide For Slider Project 
 function showSlide(index){
        if(index >= slides.length){
          slideIndex = 0;
@@ -46,6 +46,7 @@ function showSlide(index){
      slides[slideIndex].classList.add("displaySlide");
 }
 
+// Building feature for previousSlide For Previous Slide
 
 function previousSlide(){
    slideIndex--;
@@ -53,6 +54,8 @@ function previousSlide(){
 }
 
 
+
+// Building Feature  for nextSlide 
 function nextSlide(){
   slideIndex++; 
   showSlide(slideIndex);
