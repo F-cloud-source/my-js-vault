@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"   href="ImageSlider.css">
+</head>
+<body> 
+     
+   <!-- Built Outer Div as A Outer Body and good Sheild 
+    for Inner div and All INNER Div imges not dislocate 
+    and mess all UI -->
+
+          <div  class="sliders">
+               <div class="slider">
+              
+                <img  class="slide" src="VS-code Images Projects Folder/image1.jpg" alt="Image No #1">
+                <img  class="slide" src="VS-code Images Projects Folder/image2.jpg" alt="Image No #2"> 
+                <img  class="slide" src="VS-code Images Projects Folder/image3.jpg" alt="Image No #3 ">
+                <img  class="slide" src="VS-code Images Projects Folder/image4.jpg" alt="Image No #4 ">
+
+               </div>
+
+        <div class="nav-buttons">
+          <!-- For Button interactivity We add Onclick Event handler 
+           to call JS Function and further usages in All JS Logic-->
+
+            <button class="prev" onclick="previousSlide()">Previous</button>
+            <button class="next"  onclick="nextSlide()">Next</button>
+
+          </div>
+
+
+
+
+
+
+    <script src="ImageSlider.js"></script>
+</body>
+</html>

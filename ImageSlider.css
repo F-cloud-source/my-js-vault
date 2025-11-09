@@ -1,0 +1,52 @@
+body{
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+.slider{
+     position: relative;
+     width: 100%;
+     margin: auto;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    display: none;
+}
+
+.nav-buttons{
+    padding: 40px 30px;
+    
+}
+
+.prev , .next{
+    color: aqua;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 30px;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: hsl(92, 98%, 48%); /* hover effect for both */
+    color: hsl(120, 100%, 25%);
+}
+
+.prev, .next {
+    padding: 10px 20px;
+}
+
+
+.prev, .next {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.1);
+}
+
+img.displaySlide{
+    display: block;
+}
