@@ -1,0 +1,10 @@
+{
+    "name": "Faizan Ali",
+    "age": 30,
+    "Roll Number": "F25-XXXX",
+    "isemployed": false,
+    "isMarried": true,
+    "totalKids": 2,
+    "Hobby": ["Eating" , "Cooking" , "Karate" , "Baking Cake"]
+
+}

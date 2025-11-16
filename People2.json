@@ -1,0 +1,32 @@
+[
+    {
+    "name": "Micheal",
+    "age": 20,
+    "Roll Number": "A05-XXXX",
+    "isemployed": false,
+    "isMarried": true,
+    "totalKids": 5
+    
+    },
+ 
+
+    {
+    "name": "Luci",
+    "age": 24,
+    "Roll Number": "A55-XXXX",
+    "isemployed": false,
+    "isMarried": false,
+    "totalKids": "None"
+
+    },
+
+    {
+    "name": "Eren",
+    "age": 16,
+    "Roll Number": "F12-XXXX",
+    "isemployed": true,
+    "isMarried":  false,
+    "totalKids": "None"
+    }
+
+]

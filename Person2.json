@@ -1,0 +1,10 @@
+{
+    "name": "Micheal",
+    "age": 20,
+    "Roll Number": "A05-XXXX",
+    "isemployed": false,
+    "isMarried": true,
+    "totalKids": 5,
+    "Hobby": ["Eating" , "Fishing" , "Karate" , "Baking Cake"]
+
+}
