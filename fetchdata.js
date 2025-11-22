@@ -4,33 +4,25 @@
 //        used for interacting with api and send data Ascynronous over the Web.
 //        fetch((url , {options}).
 
-//fetch("https://pokeapi.co/api/v2/pokemon-species/mike")
-     //.then(resolve => {
-        //  if(!resolve.ok){
-              // throw new Error("Fetch data not Accessed");
-        //  }
-         // return resolve.json();
-    // })
-    // .then(data =>
-         //  console.log(data.id))
-    // .catch(error =>
-          // console.log(error));
 
 
-async function  fetchApi(){
-        
-     try{
-          const response = await fetch("https://pokeapi.co/api/v2/pokemon-species/");
 
-          if(!response.ok){
-               throw new Error("This is not Correct Pokemon Name");
-          }
-          const data = await response.json();
-          console.log(data);
-     }
-     catch(error){
-           console.log(error);
-     }
-}
+let MyButton = document.getElementById("Btn1");
 
-fetchApi();
+          MyButton.addEventListener("click" , event =>{
+        fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+              .then(response => response.json())
+              .then(data => console.log(data))
+              .catch(error => console.log(error))
+                });
+
+
+MyButton.addEventListener("mouseover" , event=>{
+     MyButton.style.color = "red";
+     MyButton.style.backgroundColor = "white";
+});
+
+MyButton.addEventListener("mouseout" , event=>{
+     MyButton.style.color = "green";
+     MyButton.style.backgroundColor = "white";
+});

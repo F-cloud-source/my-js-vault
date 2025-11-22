@@ -1,0 +1,18 @@
+ body{
+    background-color: yellow;
+ }
+ #Bar1{
+    font-size: 3rem;
+    border-radius: 10px;
+ }
+ #Btn1{
+     color: black;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 10px;
+     background-color: aqua;
+     font-size: 2rem;
+     display: flexbox;
+     align-items: center;
+     justify-content: center;
+}
