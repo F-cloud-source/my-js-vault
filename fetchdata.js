@@ -5,17 +5,48 @@
 //        fetch((url , {options}).
 
 let InputBox = document.getElementById("display");
-
-
-
-
 let MyButton = document.getElementById("Btn1");
-
-          MyButton.addEventListener("click" , event =>{
-        fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
-              .then(response => response.json())
-              .then(data => console.log(data))
-              .catch(error => console.log(error))
-                });
+let ContentArea  = document.getElementById("content");
+     
+     
 
 
+MyButton.addEventListener("click" , event =>{
+// Making Input bar all Elements lower Case
+let PokemonName = InputBox.value.trim().toLowerCase()
+
+// See if this Input is empty or not 
+
+if(PokemonName === ""){
+  ContentArea.textContent = "Please add a Pokeman Name"
+   return;
+}
+
+// Fetching data from Pokeman API 
+
+fetch(`https://pokeapi.co/api/v2/pokemon/${PokemonName}`)
+     .then(response => {
+      if(!response.ok){
+        throw new Error("Pokemon Not found");
+        
+      }
+      return response.json(); // Parse Data
+    })
+     .then(data =>{
+      let name = data.name
+      let type = data.types.map(type => type.type.name).join(",");
+      let image = data.sprites.front_default
+      
+      // Display Content on Web UI
+ContentArea.innerHTML = `
+           <h2>${name.charAt(0).toUpperCase() + name.slice(1)}</h2>
+           <p><strong>Type:</strong> ${type}
+           <img src="${image}" alt="${name}" width=150>
+           `;
+     })
+
+    .catch(error => {
+      ContentArea.textContent = "Error: ${error.message}"
+    })
+      
+});
