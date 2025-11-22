@@ -4,6 +4,8 @@
 //        used for interacting with api and send data Ascynronous over the Web.
 //        fetch((url , {options}).
 
+let InputBox = document.getElementById("display");
+
 
 
 
@@ -17,12 +19,3 @@ let MyButton = document.getElementById("Btn1");
                 });
 
 
-MyButton.addEventListener("mouseover" , event=>{
-     MyButton.style.color = "red";
-     MyButton.style.backgroundColor = "white";
-});
-
-MyButton.addEventListener("mouseout" , event=>{
-     MyButton.style.color = "green";
-     MyButton.style.backgroundColor = "white";
-});

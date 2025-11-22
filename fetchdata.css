@@ -1,18 +1,26 @@
  body{
     background-color: yellow;
  }
- #Bar1{
-    font-size: 3rem;
+ #display{
+    font-size: 2rem;
     border-radius: 10px;
+    
+    
  }
  #Btn1{
-     color: black;
+     color:  white;
      border-radius: 10px;
      padding: 10px;
      margin: 10px;
-     background-color: aqua;
-     font-size: 2rem;
+     background-color: red;
+     font-size: 1rem;
      display: flexbox;
      align-items: center;
      justify-content: center;
+      transition: background-color 0.3s ease-in-out 0.2s; /* property duration timing-function delay */
+}
+
+#Btn1:hover{
+   background-color: black;
+   color: white;
 }
