@@ -1,0 +1,70 @@
+body{
+    background-color: rgba(3, 3, 3, 0.297);
+
+}
+
+#user-Input{
+     display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.update{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#search-box{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    box-shadow: 0 0 8px yellow;
+    outline: none; /* Remove default outline for a cleaner look */
+    border-radius: 10px;
+}
+
+#btn-search{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: rgb(238, 255, 1);
+    background-color: black;
+    box-shadow: 0 0 8px rgb(234, 255, 0);
+    outline: none; /* Remove default outline for a cleaner look */
+    box-shadow: 0 0 8px yellow;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition for background and transform */
+    cursor: pointer;
+
+}
+
+#btn-search:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.city-update{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.degree-update{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.humidity-update{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.temp-update{
+     font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
