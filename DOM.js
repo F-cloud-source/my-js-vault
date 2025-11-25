@@ -24,3 +24,14 @@ const travelMSG = document.getElementById("travel-msg");
 travelMSG.textContent = "Welcome " + (userName === "" ? "Guest" : userName);
 
 
+//<button id="myBtn">Click Me</button>
+//<p id="output"></p>
+
+let Button = document.getElementById("myBtn");
+
+Button.addEventListener(("click" , event =>{
+       
+      event.target.textContent = "You click me 😍";
+}));
+
+console.log(Button);
