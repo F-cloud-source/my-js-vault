@@ -18,6 +18,9 @@ const userName = "";   // Try "ali" or leave empty
 
 const travelMSG = document.getElementById("travel-msg");
 
+// ? mean if and : means else in coding language  and === mean Strict OPERATOR assign 
+// any varible for Storign data give this or nothing as Strich not Comparsion in Modern Js
+
 travelMSG.textContent = "Welcome " + (userName === "" ? "Guest" : userName);
 
 

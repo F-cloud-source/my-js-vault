@@ -30,16 +30,20 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${PokemonName}`)
         throw new Error("Pokemon Not found");
         
       }
-      return response.json(); // Parse Data
+      return response.json(); // Parse Data and Converted in to DOM to Update Live in UI on Browser Refreh
     })
+
+
+// Access Differet JSON vlaue for data and use Map and img as to display Live image for Search Pokemon
+
      .then(data =>{
       let name = data.name
       let type = data.types.map(type => type.type.name).join(",");
       let image = data.sprites.front_default
       
-      // Display Content on Web UI
+      // Display Content on Web UI Use DOM 
 ContentArea.innerHTML = `
-           <h2>${name.charAt(0).toUpperCase() + name.slice(1)}</h2>
+           <h2>${name.charAt(0).toUpperCase() + name.slice(1)}</h2> 
            <p><strong>Type:</strong> ${type}
            <img src="${image}" alt="${name}" width=150>
            `;
